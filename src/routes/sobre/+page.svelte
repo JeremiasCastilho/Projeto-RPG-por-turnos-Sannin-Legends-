@@ -7,13 +7,27 @@
 
     <section class="conteudo-sobre">
 
-        <img
-            class="emblema-sobre"
-            src="/images/sannin.png"
-            alt="Sannin emblem"
-        />
+        
+<div class="cabecalho-sobre">
 
-        <h1>ABOUT THE GAME</h1>
+    <div class="linha-decorativa"></div>
+
+    <img
+        class="emblema-sobre"
+        src="/images/sannin.png"
+        alt="Sannin emblem"
+    />
+
+    <p class="subtitulo-sobre">
+        THE LEGENDARY THREE
+    </p>
+
+    <h1>ABOUT THE GAME</h1>
+
+    <div class="linha-decorativa"></div>
+
+    </div>
+
 
         <p class="descricao-sobre">
             Sannin Legends is a turn-based card RPG inspired by
@@ -31,8 +45,12 @@
 
             <article class="integrante">
                 <h3>Jeremias Castilho</h3>
-                <a href="mailto:jbcj@igarassu.ifpe.edu.br">
-                    Contact
+
+                 <a
+                    class="email-integrante"
+                    href="mailto:jbcj@igarassu.ifpe.edu.br"
+                >
+                    jbcj@igarassu.ifpe.edu.br
                 </a>
             </article>
 
