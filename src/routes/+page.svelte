@@ -1,15 +1,30 @@
 <script lang="ts">
-    let tituloDoJogo : string = "Sannin Legends"
+    import "../styles/menu.css"
+
+    let tituloDoJogo: string = "SANNIN LEGENDS"
+    let subtitulo: string = "THE LEGENDARY THREE"
 </script>
 
 <div class="fundo-menu">
 
-    <h1>{tituloDoJogo}</h1>
+    <div class="conteudo-menu">
 
-    <a class="menu" href="/jogar">Jogar</a>
-    <br />
-    <a class="menu" href="/sobre">Sobre</a>
+        <img
+            class="emblema-sannin"
+            src="/images/sannin.png"
+            alt="Sannin emblem"
+        />
+
+        <h1>{tituloDoJogo}</h1>
+
+        <h2>{subtitulo}</h2>
+
+        <nav class="botoes-menu">
+            <a class="botao-menu" href="/jogar">PLAY</a>
+
+            <a class="botao-menu" href="/sobre">ABOUT</a>
+        </nav>
+
+    </div>
 
 </div>
-
-<br />

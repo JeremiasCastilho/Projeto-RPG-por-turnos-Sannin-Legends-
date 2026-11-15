@@ -6,11 +6,10 @@ html, body {
 
 body {
 	color: white;
-	margin: 0;
-	padding: 8px;
+	margin: 0px;
+	padding: 0px;
 	box-sizing: border-box;
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-	background-color: gray;
 	text-align: center;	
 }
 
@@ -43,16 +42,6 @@ h1 {
 
 .menu:visited{
 	color: black;
-}
-
-.fundo-menu {
-    min-height: 100vh;
-
-    background-image: url('/images/menu-backgound.png');
-
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 img.sobre {
