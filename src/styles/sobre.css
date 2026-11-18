@@ -1,3 +1,5 @@
+
+/* Define o espaço principal da página Sobre e centraliza seu conteúdo. */
 .pagina-sobre {
     min-height: 100vh;
     width: 100%;
@@ -9,6 +11,7 @@
 
     padding: 40px 20px;
 
+    /* Utiliza a mesma imagem do menu com uma camada escura. */
     background-image:
         linear-gradient(
             rgba(0, 0, 0, 0.55),
@@ -21,6 +24,7 @@
     background-repeat: no-repeat;
 }
 
+/* Cria o painel central que reúne as informações da página. */
 .conteudo-sobre {
     width: 100%;
     max-width: 850px;
@@ -32,12 +36,14 @@
     border: 2px solid #b18a48;
     border-radius: 8px;
 
+    /* Adiciona profundidade ao painel com uma sombra externa. */
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.7);
 
     text-align: center;
     color: #e8d5a5;
 }
 
+/* Define o tamanho inicial e a aparência do emblema. */
 .emblema-sobre {
     width: 125px;
     height: 125px;
@@ -48,6 +54,7 @@
     filter: drop-shadow(0 5px 8px rgba(0, 0, 0, 0.8));
 }
 
+/* Personaliza os títulos principais dentro do painel. */
 .conteudo-sobre h1 {
     color: #e5c47b;
     font-size: 36px;
@@ -58,6 +65,7 @@
     margin: 10px 0 20px;
 }
 
+/* Controla a largura, o alinhamento e a leitura do texto descritivo. */
 .descricao-sobre {
     max-width: 650px;
     margin: 0 auto;
@@ -67,6 +75,7 @@
     line-height: 1.8;
 }
 
+/* Cria uma linha horizontal para separar as seções da página. */
 .divisor-sobre {
     width: 70%;
     height: 2px;
@@ -76,6 +85,7 @@
     background-color: #a98543;
 }
 
+/* Define a aparência do título da seção da equipe. */
 .conteudo-sobre h2 {
     color: #e5c47b;
     font-size: 23px;
@@ -84,6 +94,7 @@
     margin-bottom: 25px;
 }
 
+/* Organiza os integrantes em duas colunas. */
 .equipe-sobre {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -93,6 +104,7 @@
     margin: 0 auto 35px;
 }
 
+/* Cria um cartão individual para cada integrante da equipe. */
 .integrante {
     padding: 20px 12px;
 
@@ -100,36 +112,43 @@
     border: 1px solid #a98543;
     border-radius: 5px;
 
+    /* Suaviza as alterações visuais durante a interação. */
     transition: 0.3s;
 }
 
+/* Aplica um efeito visual quando o cursor passa sobre o cartão. */
 .integrante:hover {
     transform: translateY(-5px);
     background-color: rgba(110, 54, 35, 0.95);
     border-color: #e5c47b;
 }
 
+/* Formata os nomes dos integrantes. */
 .integrante h3 {
     color: #f0d49a;
     font-size: 17px;
     margin: 5px 0 10px;
 }
 
+/* Define a aparência e o comportamento dos links de e-mail. */
 .email-integrante {
     display: inline-block;
     color: #d6b56d;
     font-size: 14px;
     text-decoration: none;
     transition: 0.3s;
-    overflow-wrap: anywhere;
 
+    /* Permite quebrar endereços longos para evitar transbordamento. */
+    overflow-wrap: anywhere;
 }
 
+/* Destaca o link de e-mail quando o cursor passa sobre ele. */
 .email-integrante:hover {
     color: #fff0c5;
     text-decoration: underline;
 }
 
+/* Define a aparência do botão utilizado para voltar ao menu. */
 .botao-voltar {
     display: inline-block;
 
@@ -138,6 +157,7 @@
     color: #e8d5a5;
     text-decoration: none;
 
+    /* Aplica um degradê em tons de madeira ao botão. */
     background: linear-gradient(
         90deg,
         #28170f,
@@ -154,6 +174,7 @@
     transition: 0.3s;
 }
 
+/* Altera a cor e aumenta levemente o botão durante a interação. */
 .botao-voltar:hover {
     background: #8b2922;
     color: white;
@@ -161,6 +182,7 @@
     transform: scale(1.05);
 }
 
+/* Adapta os elementos da página para telas menores. */
 @media (max-width: 600px) {
     .conteudo-sobre {
         padding: 25px 15px;
@@ -175,11 +197,13 @@
         font-size: 15px;
     }
 
+    /* Coloca os integrantes um abaixo do outro em telas pequenas. */
     .equipe-sobre {
         grid-template-columns: 1fr;
     }
 }
 
+/* Respeita a preferência do usuário por movimentos reduzidos. */
 @media (prefers-reduced-motion: reduce) {
     .integrante,
     .botao-voltar {
@@ -187,13 +211,14 @@
     }
 }
 
-
+/* Organiza os elementos do cabeçalho da página em coluna. */
 .cabecalho-sobre {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+/* Cria um detalhe decorativo com um degradê dourado. */
 .linha-decorativa {
     width: 65%;
     max-width: 350px;
@@ -211,6 +236,11 @@
     );
 }
 
+/*
+   Redefine o tamanho do emblema.
+   Como esta regra aparece depois da primeira declaração,
+   seus valores de largura, altura e margem prevalecem.
+*/
 .emblema-sobre {
     width: 150px;
     height: 150px;
@@ -222,6 +252,7 @@
     filter: drop-shadow(0 5px 8px rgba(0, 0, 0, 0.8));
 }
 
+/* Formata o texto menor que aparece no cabeçalho. */
 .subtitulo-sobre {
     color: #b18a48;
 
@@ -232,6 +263,7 @@
     margin: 5px 0;
 }
 
+/* Personaliza o título quando ele está dentro do cabeçalho. */
 .cabecalho-sobre h1 {
     color: #e5c47b;
 
@@ -245,6 +277,7 @@
     margin: 10px 0;
 }
 
+/* Ajusta o cabeçalho e o emblema para dispositivos móveis. */
 @media (max-width: 600px) {
     .emblema-sobre {
         width: 115px;

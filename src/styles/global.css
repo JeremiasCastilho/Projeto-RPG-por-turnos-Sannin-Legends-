@@ -1,62 +1,71 @@
+
+/* Define as configurações básicas da página e ocupa toda a área disponível. */
 html, body {
-	position: relative;
-	width: 100%;
-	height: 100%;
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 
+/* Define a aparência geral do conteúdo da página. */
 body {
-	color: white;
-	margin: 0px;
-	padding: 0px;
-	box-sizing: border-box;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-	text-align: center;	
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    text-align: center;
 }
 
+/* Define a aparência padrão dos títulos principais. */
 h1 {
- 	color: white;
- 	font-weight: bold;
- 	font-family: verdana;
+    color: white;
+    font-weight: bold;
+    font-family: verdana;
 }
 
+/* Estiliza o link utilizado para retornar ao menu principal. */
 .menu {
-	display: block;
-	font-size: 20px;
-	margin: auto;
-	margin-bottom: 5px;
-	border-style: solid;
-	border-width: 3px;
-	width: 20%;
-	padding: 5px;
-	background-color: white;
-	border: 3px solid black;
-	text-align: center;
-	text-decoration: none;
-	color: black;
-	padding: 5px 0px 5px 0px;
+    display: block;
+    font-size: 20px;
+    margin: auto;
+    margin-bottom: 5px;
+    border-style: solid;
+    border-width: 3px;
+    width: 20%;
+    padding: 5px;
+    background-color: white;
+    border: 3px solid black;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    padding: 5px 0px 5px 0px;
 }
 
+/* Altera a cor de fundo do link quando o usuário passa o mouse. */
 .menu:hover{
-	background-color: #2cf1bc;
+    background-color: #2cf1bc;
 }
 
+/* Mantém a cor preta do link mesmo depois de visitado. */
 .menu:visited{
-	color: black;
+    color: black;
 }
 
+/* Limita o tamanho máximo das imagens da página Sobre. */
 img.sobre {
-	max-width:15%;
-	max-height:15%;
+    max-width:15%;
+    max-height:15%;
 }
-
 
 /* GAME PAGE */
 
+/* Define o espaçamento externo da área de batalha. */
 .battle-page {
     padding: 30px 15px;
     box-sizing: border-box;
 }
 
+/* Cria o painel principal da batalha, com fundo escuro e borda decorativa. */
 .battle-container {
     width: 100%;
     max-width: 1000px;
@@ -70,11 +79,13 @@ img.sobre {
     text-align: center;
 }
 
+/* Personaliza o título principal dentro do painel de batalha. */
 .battle-container h1 {
     color: #e6b76d;
     text-shadow: 2px 2px 4px black;
 }
 
+/* Define a aparência da lista de seleção dos personagens. */
 .battle-container select {
     padding: 12px;
     margin: 15px;
@@ -85,6 +96,7 @@ img.sobre {
     font-size: 16px;
 }
 
+/* Define a aparência padrão dos botões da batalha. */
 .battle-container button {
     padding: 12px 18px;
     background-color: #793b20;
@@ -95,15 +107,18 @@ img.sobre {
     font-weight: bold;
 }
 
+/* Altera a cor do botão quando o mouse passa sobre ele, desde que esteja habilitado. */
 .battle-container button:hover:not(:disabled) {
     background-color: #a65d2e;
 }
 
+/* Reduz a opacidade e bloqueia o cursor dos botões desativados. */
 .battle-container button:disabled {
     opacity: 0.45;
     cursor: not-allowed;
 }
 
+/* Organiza os painéis do jogador e do adversário em duas colunas. */
 .battle-status {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -111,6 +126,7 @@ img.sobre {
     margin: 30px 0;
 }
 
+/* Estiliza os painéis que apresentam as informações dos participantes. */
 .fighter {
     padding: 20px;
     background-color: rgba(65, 37, 23, 0.9);
@@ -118,6 +134,7 @@ img.sobre {
     border-radius: 8px;
 }
 
+/* Define a estrutura da barra que representa os pontos de vida. */
 .health-bar {
     width: 100%;
     height: 18px;
@@ -126,19 +143,23 @@ img.sobre {
     overflow: hidden;
 }
 
+/* Define a altura e a animação de preenchimento das barras de vida. */
 .health-fill {
     height: 100%;
     transition: width 0.3s;
 }
 
+/* Define a cor verde para representar a vida do jogador. */
 .player-health {
     background-color: #42a65a;
 }
 
+/* Define a cor vermelha para representar a vida do adversário. */
 .enemy-health {
     background-color: #c43b30;
 }
 
+/* Organiza as cartas do jogador em quatro colunas. */
 .card-list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -146,6 +167,7 @@ img.sobre {
     margin: 20px 0;
 }
 
+/* Define o visual individual de cada carta do jogo. */
 .game-card {
     padding: 15px;
     background-color: #4b2b1c;
@@ -153,14 +175,17 @@ img.sobre {
     border-radius: 8px;
 }
 
+/* Destaca os títulos das cartas com uma cor dourada. */
 .game-card h3 {
     color: #f4c879;
 }
 
+/* Ajusta o tamanho dos textos que descrevem as cartas. */
 .game-card p {
     font-size: 14px;
 }
 
+/* Destaca a área onde são exibidas as mensagens da batalha. */
 .battle-message {
     margin: 20px 0;
     padding: 12px;
@@ -169,6 +194,7 @@ img.sobre {
     font-weight: bold;
 }
 
+/* Adapta a organização das cartas e dos participantes para telas menores. */
 @media (max-width: 700px) {
     .card-list {
         grid-template-columns: repeat(2, 1fr);
@@ -179,10 +205,9 @@ img.sobre {
     }
 }
 
+/* Organiza as cartas em apenas uma coluna em telas muito pequenas. */
 @media (max-width: 400px) {
     .card-list {
         grid-template-columns: 1fr;
     }
 }
-
-

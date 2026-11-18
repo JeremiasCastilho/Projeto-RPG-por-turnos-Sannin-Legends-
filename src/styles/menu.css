@@ -1,4 +1,5 @@
 
+/* Define o fundo e centraliza o conteúdo principal do menu. */
 .fundo-menu {
     min-height: 100vh;
     width: 100%;
@@ -7,15 +8,18 @@
     justify-content: center;
     align-items: center;
 
+    /* Aplica uma camada escura sobre a imagem para melhorar a leitura. */
     background-image:
         linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.50)),
         url("/images/menu-backgound.png");
 
+    /* Faz a imagem ocupar o espaço disponível sem distorcer. */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
+/* Organiza os elementos do menu em coluna e centraliza os textos. */
 .conteudo-menu {
     display: flex;
     flex-direction: column;
@@ -24,33 +28,34 @@
     padding: 30px;
 }
 
+/* Define o tamanho e os efeitos visuais do emblema dos Sannin. */
 .emblema-sannin {
-   
     width: 175px;
     height: 175px;
     object-fit: contain;
     margin-bottom: 20px;
 
+    /* Adiciona uma sombra ao redor da imagem. */
     filter: drop-shadow(0 5px 8px rgba(0, 0, 0, 0.8));
-
 }
 
+/* Personaliza o título principal do jogo. */
 .conteudo-menu h1 {
-    
     color: #e5c47b;
     font-size: 58px;
     font-weight: bold;
     letter-spacing: 7px;
     text-transform: uppercase;
 
+    /* Cria profundidade no texto utilizando sombras. */
     text-shadow:
         3px 3px 0 #382414,
         5px 5px 8px #000;
 
     margin: 10px 0;
-
 }
 
+/* Define a aparência do subtítulo abaixo do nome do jogo. */
 .conteudo-menu h2 {
     color: #e0c99a;
     font-size: 18px;
@@ -58,6 +63,7 @@
     margin-bottom: 40px;
 }
 
+/* Organiza os botões do menu verticalmente e define o espaçamento. */
 .botoes-menu {
     display: flex;
     flex-direction: column;
@@ -65,14 +71,16 @@
     width: 230px;
 }
 
+/* Define a aparência padrão dos botões do menu. */
 .botao-menu {
-     display: block;
+    display: block;
     padding: 16px;
     text-decoration: none;
     text-align: center;
 
     color: #e8d5a5;
 
+    /* Cria um fundo com degradê em tons de madeira. */
     background:
         linear-gradient(
             90deg,
@@ -84,6 +92,7 @@
     border: 2px solid #b18a48;
     border-radius: 4px;
 
+    /* Adiciona sombras externas e internas ao botão. */
     box-shadow:
         0 4px 8px rgba(0, 0, 0, 0.7),
         inset 0 0 8px rgba(0, 0, 0, 0.6);
@@ -92,9 +101,11 @@
     font-weight: bold;
     letter-spacing: 4px;
 
+    /* Suaviza as mudanças visuais durante as interações. */
     transition: 0.3s;
 }
 
+/* Altera a aparência do botão quando o cursor passa sobre ele. */
 .botao-menu:hover {
     background:
         linear-gradient(
@@ -107,17 +118,20 @@
     color: #fff0c5;
     border-color: #e0bd72;
 
+    /* Aumenta levemente o botão para destacar a interação. */
     transform: scale(1.06);
 
     box-shadow:
         0 0 15px rgba(214, 181, 109, 0.4);
 }
 
+/* Destaca o botão quando ele recebe foco pela navegação do teclado. */
 .botao-menu:focus-visible {
     outline: 3px solid #e0bd72;
     outline-offset: 4px;
 }
 
+/* Ajusta os elementos do menu para telas menores, como celulares. */
 @media (max-width: 600px) {
     .conteudo-menu h1 {
         font-size: 32px;
@@ -135,19 +149,23 @@
     }
 }
 
+/* Respeita a configuração do sistema para reduzir movimentos na tela. */
 @media (prefers-reduced-motion: reduce) {
     .botao-menu {
         transition: none;
     }
+
     .conteudo-menu {
-    animation: none;
-}
+        animation: none;
+    }
 }
 
+/* Aplica uma animação de entrada ao conteúdo do menu. */
 .conteudo-menu {
     animation: aparecer 1s ease-out;
 }
 
+/* Define a animação que faz o conteúdo surgir gradualmente de baixo para cima. */
 @keyframes aparecer {
     from {
         opacity: 0;
